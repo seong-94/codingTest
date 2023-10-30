@@ -1,9 +1,10 @@
-알고리즘 문제 풀이 with JavaScript
+# 알고리즘 문제 풀이 with JavaScript
 
 
-프로그래머스 코딩테스트 연습 바로가기! 
-HackerRank 코딩테스트 연습 바로가기!
-백준 코딩테스트 연습 바로가기! 
+
+ - [프로그래머스 코딩테스트](https://school.programmers.co.kr/learn/challenges?order=recent)
+ - [HackerRank 코딩테스트](https://www.hackerrank.com/dashboard)
+ - [백준 코딩테스트](https://www.acmicpc.net/workbook/top)
 
 
 
