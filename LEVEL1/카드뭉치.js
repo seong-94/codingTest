@@ -1,6 +1,6 @@
-//school.programmers.co.kr/learn/courses/30/lessons/159994
+//https://school.programmers.co.kr/learn/courses/30/lessons/159994
 
-https: function solution(cards1, cards2, goal) {
+function solution(cards1, cards2, goal) {
   let idx1 = 0;
   let idx2 = 0;
 
