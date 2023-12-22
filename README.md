@@ -1,4 +1,4 @@
-# 알고리즘 문제 풀이 with JavaScript
+# 알고리즘 문제 풀이 with JavaScrip
 
 - [프로그래머스 코딩테스트](https://school.programmers.co.kr/learn/challenges?order=recent)
 - [HackerRank 코딩테스트](https://www.hackerrank.com/dashboard)
