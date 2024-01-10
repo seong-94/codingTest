@@ -1,0 +1,33 @@
+### Quiz
+1.리액트 앱에서 State(상태)의 존재 목적은? 
+변화가 생경르 때 리액트가 컴포넌트를 재평가 하는 데이터
+
+
+리액트 훅의 중요한 규칙은 두 가지입니다
+2.최상위에서만 Hook을 호출해야 합니다: Hook을 반복문, 조건문, 중첩된 함수 내에서 호출하지 않아야 합니다. 이는 훅의 호출 순서가 항상 같아야 한다는 리액트의 기본 규칙 때문입니다. 
+```
+function App() {
+  const [count, setCount] = useState(0);
+  if (count > 2) {
+    useEffect(() => {
+      document.title = `Count: ${count}`;
+    });
+  }
+  return <div>{count}</div>;
+}
+```
+위의 코드에서 useState와 useEffect는 최상위에서 호출되어야 하며, 조건문 내부에서 호출되어서는 안 됩니다.
+
+3
+React 함수 내에서만 Hook을 호출해야 합니다: 이는 리액트의 함수 컴포넌트 또는 커스텀 훅 내에서만 Hook을 호출해야 한다는 규칙입니다. 일반 자바스크립트 함수에서는 Hook을 호출하지 않아야 합니다.
+예를 들어, 아래와 같이 일반 함수에서 Hook을 호출하는 것은 허용되지 않습니다.
+
+```
+function regularFunction() {
+  const [count, setCount] = useState(0); // ❌ Hook cannot be called inside a regular function
+}
+
+```
+위의 코드에서 useState는 리액트 함수 컴포넌트 또는 커스텀 훅 내에서만 호출되어야 합니다.
+
+이러한 규칙들은 훅의 동작 방식을 이해하고, 예기치 않은 버그를 방지하는 데 도움이 됩니다. 이 규칙들을 자동으로 검사해주는 ESLint 플러그인인 eslint-plugin-react-hooks를 사용하면 코드를 더욱 안전하게 관리할 수 있습니다.
